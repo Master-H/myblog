@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+  ], 
+  "parser": "@typescript-eslint/parser", 
+  "rules": {
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension":0, // 不设置为0不允许写tsx
+    "jsx-a11y/label-has-associated-control":0,
+    "jsx-a11y/control-has-associated-label":0,
+    "jsx-a11y/heading-has-content":0,
+    "@typescript-eslint/explicit-function-return-type":0,
+    "max-len":0,
+    "no-unused-expressions":0,
+    "react/prop-types":0 ,
+    "import/no-extraneous-dependencies": 0 // 允许从devDependencies里面import
+  }
+}
+

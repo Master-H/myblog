@@ -1,0 +1,20 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "12.js",
+  "scripts": {
+    "test": "pm2 start pm2.dev.config.js",
+    "start": "pm2 start pm2.config.js",
+    "stop": "pm2 stop hxyblog"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0",
+    "pm2": "^4.2.1"
+  }
+}
