@@ -1,4 +1,3 @@
-
 import React, { useState, SFC } from 'react';
 import {
   Layout,
@@ -7,9 +6,11 @@ import { withRouter } from 'umi';
 import { RouteComponentProps } from 'react-router';
 import Menu from '../menu/Menu';
 import Header from '../header';
+import styles from './index.less';
 
 const {
   Content, Sider,
+  Footer,
 } = Layout;
 
 const BasicLayout: SFC<RouteComponentProps> = ({ children, history }) => {
@@ -26,9 +27,12 @@ const BasicLayout: SFC<RouteComponentProps> = ({ children, history }) => {
         </Sider>
         <Content>
           {children}
+          <Footer className={styles.footer}>
+            <a href="https://beian.miit.gov.cn/">京ICP备19056401号-1</a>
+          </Footer>
         </Content>
-      </Layout>
 
+      </Layout>
     </Layout>
   );
 };
