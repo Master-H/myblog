@@ -31,7 +31,6 @@ class MenuComponent extends React.Component<{}, {}> {
   // 渲染三级菜单,默认最大三级菜单
   renderThirdMenu = (thirdMenuLists: Array<MenuConfig>) => thirdMenuLists.map((item: MenuConfig) => this.renderItem(item))
 
-
    // 渲染二级菜单
    renderSecondMenu = (secondMenuLists: Array<MenuConfig>) => secondMenuLists.map((secondMenuItem: MenuConfig) => {
      if (secondMenuItem.children) {

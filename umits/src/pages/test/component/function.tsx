@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import { Button, Input } from 'antd';
 
-
 interface MyProps {
   onClick: (param: number) => void;
   age: number;

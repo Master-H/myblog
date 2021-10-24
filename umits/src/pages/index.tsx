@@ -12,7 +12,6 @@ class Test extends React.Component<any, any> {
     height: 22,
   };
 
-
   componentDidMount() {
     // eslint-disable-next-line no-console
     console.log(111);

@@ -1,6 +1,5 @@
 import React, { SFC } from 'react';
 
-
 interface MyProps {
   change: () => void;
 }

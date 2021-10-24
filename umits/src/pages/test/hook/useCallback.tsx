@@ -15,7 +15,6 @@ class UseCallback extends React.Component<{}, UseCallbackState> {
     };
   }
 
-
   // 箭头函数写法，每次调用都是只向同一个
   handlChangeNumber = () => {
     const { number } = this.state;
@@ -24,7 +23,6 @@ class UseCallback extends React.Component<{}, UseCallbackState> {
       number: number + 1,
     });
   };
-
 
   render() {
     const { number } = this.state;

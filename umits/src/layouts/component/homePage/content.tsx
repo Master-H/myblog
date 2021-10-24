@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import styles from './content.less';
 
-
 interface MyProps {
   onClick: (param: number) => void;
   age: number;

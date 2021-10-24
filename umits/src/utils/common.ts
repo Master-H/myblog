@@ -1,4 +1,3 @@
-
 const updateState = (state: object | undefined, payload: object): object => (
   {
     ...state,

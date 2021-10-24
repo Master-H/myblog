@@ -20,7 +20,6 @@ class Test extends React.PureComponent<MyProps, MyState> {
     };
   }
 
-
   handleClick = () => {
     const { age } = this.state;
     this.setState({

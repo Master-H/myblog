@@ -2,7 +2,6 @@ import axios, { AxiosError, AxiosRequestConfig } from 'axios';
 import qs from 'qs';
 import { notification } from 'antd';
 
-
 // axios基本配置
 const baseConfig = {
   withCredentials: true, // 允许跨域
@@ -11,7 +10,6 @@ const baseConfig = {
   retryDelay: 100, // 超时后再次发请求的间隔时间
   retryCount: 0,
 };
-
 
 /**
  * axios超时判断
@@ -56,7 +54,6 @@ const timeoutHandle = async (err: AxiosError) => {
  * @description: 和后端统一返回数据类型：{ data: {}, error: ''},请求不符合条件，返回状态码后端要进行相应的设置，并设置error对应的信息
  */
 const errorHandler = (err: AxiosError): any => (isTimeoutError(err) ? timeoutHandle(err) : commonErrorHandler(err));
-
 
 /**
  * 请求做统一错误拦截，提醒
